@@ -1,0 +1,532 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Moonzeira - Um Universo de Streaming</title>
+    <meta name="keywords" content="Shivka">
+    <meta name="description" content="Shivka">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- FavIcon CSS -->
+    <link rel="icon" href="assets/images/favicon.png" type="image/gif" sizes="16x16">
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Moonzeira, Stream, Chat, Dublagem, Narração">
+    <meta name="keywords" content="Stream, Games, Diversão, Jogos, Valorant, Dublagem, Narração, Twitch, Gamer">
+    <meta name="author" content="Henrique - @@bitfp">
+
+    <!--Google Fonts CSS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="../css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!--Font Awesome Icon CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+
+    <!-- Swiper Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/swiper-bundle.min.css">
+
+    <!-- Wow Animation CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
+
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.min.css">
+
+    <!-- Jarallax CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/jarallax.css">
+
+    <!-- Main Style CSS  -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Great+Vibes&family=Shadows+Into+Light&family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Changa:wght@200..800&family=Great+Vibes&family=Mochiy+Pop+One&family=New+Rocker&family=Shadows+Into+Light&family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Changa:wght@200..800&family=Great+Vibes&family=Jersey+25+Charted&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mochiy+Pop+One&family=New+Rocker&family=Shadows+Into+Light&family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=MedievalSharp&family=Offside&family=Pirata+One&family=Poetsen+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Germania+One&family=Kdam+Thmor+Pro&family=MedievalSharp&family=Offside&family=Pirata+One&family=Poetsen+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+ <!-- Loder Start -->
+<div class="loader-box-one">
+    <div class="loader-one">
+        <svg>
+          <defs>
+            <filter id="goo">
+              <fegaussianblur in="SourceGraphic" stddeviation="2" result="blur"></fegaussianblur>
+              <fecolormatrix values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 5 -2" result="gooey"></fecolormatrix>
+              <fecomposite in="SourceGraphic" in2="gooey" operator="atop"></fecomposite>
+            </filter>
+          </defs>
+        </svg>
+    </div>
+</div>
+<!-- Loder End -->
+
+<!-- Banner Start -->
+<section class="main-banner-one" style="cursor: url(https://cdn.custom-cursor.com/db/17674/32/space-cat-playing-with-moon-and-stars-cursor.png) , default !important">
+    <div class="banner-blur-one"><img src="assets/images/banner-blur1.png" alt="Blur"></div>
+    <div class="banner-blur-two"><img src="assets/images/banner-blur2.png" alt="Blur"></div>
+    <div class="banner-bg-line wow fadeInDown" data-wow-delay=".1.2s"><img src="assets/images/banner-bg-line.png" alt="Banner"></div>
+    <div class="banner-object-one wow fadeInLeft" data-wow-delay=".8s"><img src="assets/images/banner-obect-one.png" alt="Object"></div>
+    <div class="banner-object-two wow fadeInRight" data-wow-delay="1s"><img src="assets/images/banner-obect-two.png" alt="Object"></div>
+    <div class="banner-bg-circle animate-this"><img src="assets/images/banner-bg-circle.png" alt="Circle"></div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-5">
+                <div class="banner-title">
+                    <h2 class="h2-subtitle wow fadeInUp" data-wow-delay=".5s">- Dublador e Criador de Conteúdo</h2>
+                    <h1 class="h1-title text-black wow fadeInUp" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">Olá, Sou o <span>Moonzeira</span></h1>
+                    <p class="wow fadeInUp" data-wow-delay=".9s">Venha fazer parte da nossa comunidade e explore um novo universo conosco.</p>
+                    <div class="banner-btn wow fadeInUp" data-wow-delay="1.1s">
+                        <a href="https://www.twitch.tv/moonzeira" class="sec-btn">Explore minhas lives</a>
+                        <a href="https://youtu.be/ZygeyPOCyoc" class="banner-play-icon popup-youtube" title="Play Video"><span><img src="assets/images/play-button.png" alt="Play"></span></a>
+                    </div>
+                    <div class="banner-social text-black wow fadeInUp" data-wow-delay="1.3s">
+                        <ul>
+                            <li><a href="https://www.facebook.com/profile.php?id=61559206693226"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCwTTGr8Kd-OEQFpIHi8Lq3A"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                              </svg></a></li>
+                            <li><a href="https://www.instagram.com/moonzeiraoficial/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href="https://tiktok.com/moonzeiraoficial"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                                <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                              </svg></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="banner-img-one wow fadeInUp" data-wow-delay=".5s">
+                    <div class="banner-man-one">
+                        
+                        <center>
+                            <img src="assets/images/logo-monark.png" alt="Banner">
+                        </center>
+                        
+                        <img src="assets/images/moonrac.png" class="banner-line-one" alt="Banner">
+                        <img src="assets/images/moonrac.png" class="banner-bg-one" alt="Banner">
+                        
+                        <a href="https://discord.gg/hgYstE5c" class="aliment-box-two">
+                            <div class="aliment-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="96px" height="96px"><path fill="#8c9eff" d="M42,45.478c0,0.416-0.479,0.65-0.807,0.395L33,38.999l0.781,2.343 C33.889,41.666,33.648,42,33.306,42H10c-2.761,0-5-2.239-5-5V11c0-2.761,2.239-5,5-5h27c2.761,0,5,2.239,5,5V45.478z"/><path fill="#fff" d="M32.627,17.295c-0.027-0.041-0.05-0.066-0.089-0.095c-0.383-0.282-2.803-1.99-5.627-2.2l-0.27,0.55 c2.78,0.67,4.05,1.64,5.38,2.83C29.73,17.21,27.46,16,23.5,16s-6.23,1.21-8.52,2.38c1.33-1.19,2.85-2.27,5.38-2.83L20.09,15 c-2.957,0.284-5.261,1.926-5.629,2.201c-0.038,0.029-0.061,0.053-0.087,0.093c-0.333,0.509-2.866,4.607-3.362,12.145 c-0.007,0.113,0.032,0.232,0.109,0.316c2.555,2.804,6.16,3.185,7.06,3.237c0.134,0.008,0.256-0.053,0.336-0.161l0.794-1.061 c-1.57-0.54-3.36-1.51-4.9-3.27c1.84,1.38,4.61,2.5,9.09,2.5s7.25-1.12,9.09-2.5c-1.54,1.76-3.33,2.73-4.9,3.27l0.794,1.061 c0.08,0.107,0.202,0.168,0.336,0.161c0.9-0.052,4.505-0.434,7.06-3.237c0.076-0.084,0.116-0.203,0.109-0.316 C35.493,21.907,32.962,17.808,32.627,17.295z M20,28c-1.1,0-2-1.12-2-2.5s0.9-2.5,2-2.5s2,1.12,2,2.5S21.1,28,20,28z M27,28 c-1.1,0-2-1.12-2-2.5s0.9-2.5,2-2.5s2,1.12,2,2.5S28.1,28,27,28z"/><path d="M26.91,15c2.824,0.211,5.244,1.918,5.627,2.2c0.039,0.029,0.063,0.054,0.089,0.095 c0.335,0.513,2.866,4.612,3.362,12.144c0.007,0.113-0.032,0.232-0.109,0.316c-2.555,2.804-6.16,3.185-7.06,3.237 c-0.008,0-0.015,0.001-0.023,0.001c-0.125,0-0.238-0.06-0.313-0.161L27.69,31.77c1.57-0.54,3.36-1.51,4.9-3.27 c-1.84,1.38-4.61,2.5-9.09,2.5s-7.25-1.12-9.09-2.5c1.54,1.76,3.33,2.73,4.9,3.27l-0.794,1.061 c-0.076,0.101-0.189,0.161-0.313,0.161c-0.008,0-0.015,0-0.023-0.001c-0.9-0.052-4.505-0.434-7.06-3.237 c-0.076-0.084-0.116-0.203-0.109-0.316c0.496-7.538,3.03-11.636,3.362-12.145c0.026-0.04,0.049-0.064,0.087-0.093 c0.368-0.275,2.671-1.917,5.629-2.201l0.27,0.55c-2.53,0.56-4.05,1.64-5.38,2.83C17.27,17.21,19.54,16,23.5,16s6.23,1.21,8.52,2.38 c-1.33-1.19-2.6-2.16-5.38-2.83L26.91,15 M27,28c1.1,0,2-1.12,2-2.5c0-1.38-0.9-2.5-2-2.5s-2,1.12-2,2.5C25,26.88,25.9,28,27,28 M20,28c1.1,0,2-1.12,2-2.5c0-1.38-0.9-2.5-2-2.5s-2,1.12-2,2.5C18,26.88,18.9,28,20,28 M20.386,14.469l-0.344,0.033 c-3.066,0.294-5.436,1.966-5.88,2.298c-0.085,0.063-0.148,0.131-0.206,0.22c-0.299,0.457-2.936,4.691-3.443,12.386 c-0.017,0.251,0.07,0.501,0.238,0.685c2.653,2.912,6.335,3.338,7.401,3.4l0.014,0.001l0.037,0.001c0.282,0,0.542-0.132,0.714-0.362 l0.794-1.061l0.411-0.549l-0.649-0.223c-0.285-0.098-0.563-0.206-0.835-0.323c1.445,0.352,3.06,0.526,4.863,0.526 s3.418-0.174,4.863-0.526c-0.272,0.118-0.55,0.225-0.835,0.323l-0.649,0.223l0.411,0.549l0.794,1.061 c0.172,0.23,0.432,0.362,0.714,0.362h0.014l0.037-0.001c1.065-0.061,4.748-0.488,7.401-3.4c0.168-0.184,0.255-0.434,0.238-0.685 c-0.506-7.692-3.143-11.927-3.442-12.384c-0.059-0.09-0.124-0.159-0.211-0.223c-0.468-0.345-2.951-2.077-5.887-2.297l-0.337-0.025 l-0.149,0.303l-0.27,0.55l-0.17,0.347C25.256,15.564,24.422,15.5,23.5,15.5s-1.756,0.064-2.521,0.177l-0.17-0.347l-0.27-0.55 L20.386,14.469L20.386,14.469z M27,27.5c-0.813,0-1.5-0.916-1.5-2s0.687-2,1.5-2s1.5,0.916,1.5,2S27.813,27.5,27,27.5L27,27.5z M20,27.5c-0.813,0-1.5-0.916-1.5-2s0.687-2,1.5-2s1.5,0.916,1.5,2S20.813,27.5,20,27.5L20,27.5z" opacity=".07"/><path d="M26.91,15c2.824,0.211,5.244,1.918,5.627,2.2c0.039,0.029,0.063,0.054,0.089,0.095 c0.335,0.513,2.866,4.612,3.362,12.144c0.007,0.113-0.032,0.232-0.109,0.316c-2.555,2.804-6.16,3.185-7.06,3.237 c-0.008,0-0.015,0.001-0.023,0.001c-0.125,0-0.238-0.06-0.313-0.161L27.69,31.77c1.57-0.54,3.36-1.51,4.9-3.27 c-1.84,1.38-4.61,2.5-9.09,2.5s-7.25-1.12-9.09-2.5c1.54,1.76,3.33,2.73,4.9,3.27l-0.794,1.061 c-0.076,0.101-0.189,0.161-0.313,0.161c-0.008,0-0.015,0-0.023-0.001c-0.9-0.052-4.505-0.434-7.06-3.237 c-0.076-0.084-0.116-0.203-0.109-0.316c0.496-7.538,3.03-11.636,3.362-12.145c0.026-0.04,0.049-0.064,0.087-0.093 c0.368-0.275,2.671-1.917,5.629-2.201l0.27,0.55c-2.53,0.56-4.05,1.64-5.38,2.83C17.27,17.21,19.54,16,23.5,16s6.23,1.21,8.52,2.38 c-1.33-1.19-2.6-2.16-5.38-2.83L26.91,15 M27,28c1.1,0,2-1.12,2-2.5c0-1.38-0.9-2.5-2-2.5s-2,1.12-2,2.5C25,26.88,25.9,28,27,28 M20,28c1.1,0,2-1.12,2-2.5c0-1.38-0.9-2.5-2-2.5s-2,1.12-2,2.5C18,26.88,18.9,28,20,28 M20.683,13.938l-0.688,0.066 c-3.199,0.307-5.669,2.049-6.132,2.396c-0.132,0.099-0.235,0.209-0.325,0.347c-0.5,0.765-3.019,4.966-3.523,12.627 c-0.025,0.386,0.108,0.771,0.367,1.055c2.78,3.051,6.628,3.498,7.742,3.562l0.029,0.002l0.051,0.001 c0.441,0,0.847-0.205,1.114-0.562l0.794-1.061l0.408-0.545C21.453,31.942,22.446,32,23.5,32s2.047-0.058,2.981-0.176l0.408,0.545 l0.794,1.061c0.267,0.357,0.673,0.562,1.114,0.562h0.029l0.052-0.002c1.113-0.064,4.961-0.511,7.741-3.562 c0.259-0.284,0.393-0.669,0.367-1.055c-0.504-7.657-3.023-11.86-3.522-12.625c-0.092-0.141-0.198-0.253-0.333-0.352 c-0.487-0.359-3.073-2.163-6.146-2.393l-0.674-0.05l-0.298,0.607l-0.27,0.55l-0.011,0.022C25.045,15.047,24.306,15,23.5,15 s-1.545,0.047-2.231,0.132l-0.011-0.022l-0.27-0.55L20.683,13.938L20.683,13.938z M27,27c-0.473,0-1-0.616-1-1.5s0.527-1.5,1-1.5 s1,0.616,1,1.5S27.473,27,27,27L27,27z M20,27c-0.473,0-1-0.616-1-1.5s0.527-1.5,1-1.5s1,0.616,1,1.5S20.473,27,20,27L20,27z" opacity=".05"/></svg>
+                            </div>
+                            <div class="aliment-box-content-two">
+                                <span>Entrar</span>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Banner End -->
+
+<!--About Us Start-->
+<section class="main-my-tools-in-one">
+    <div class="object-right-one"><img src="assets/images/about-object-one.png" alt="Object"></div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="about-us-img-box-one wow fadeInLeft" data-wow-delay=".5s">
+                    <div class="about-us-img-one">
+                        <img src="assets/images/Img_moon_site.png" alt="About Us">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-us-content-one wow fadeInRight" data-wow-delay=".5s">
+                    <div class="about-us-title-one">
+                        <div class="subtitle">
+                            <div class="subtitle-circle">
+                                <div class="subtitle-circle-one">
+                                    <div class="subtitle-circle1-one"></div>
+                                    <div class="subtitle-circle2-one"></div>
+                                </div>
+                                <div class="subtitle-circle-two">
+                                    <div class="subtitle-circle1-two"></div>
+                                    <div class="subtitle-circle2-two"></div>
+                                </div>
+                            </div>
+                            <h2 class="h2-subtitle">Victor Vaz</h2>
+                        </div>
+                        <h2 class="h2-title text-black">- Sobre Mim</h2>
+                    </div>
+                    <div class="service-box-one right-p">
+                        <div class="main-service-box-one">
+                            <div class="aliment-icon">
+                                <svg width="800px" height="800px" viewBox="0 0 1024 1024" class="icon"  version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M732.1 399.3C534.6 356 696.5 82.1 425.9 104.8s-527.2 645.8-46.8 791.7 728-415 353-497.2z" fill="#464BD8" /><path d="M588.7 309.5c12.7 0 23 10.3 23 23v55.4c0 12.7-10.3 23-23 23h-83.4c-12.7 0-23-10.3-23-23v-55.4c0-12.7 10.3-23 23-23h83.4m0-18.5h-83.4c-22.9 0-41.6 18.6-41.6 41.6V388c0 22.9 18.6 41.6 41.6 41.6h83.4c22.9 0 41.6-18.6 41.6-41.6v-55.4c-0.1-23-18.7-41.6-41.6-41.6z" fill="#151B28" /><path d="M328.3 684.5c-17.7 0-32.1-14.4-32.1-32.1V378c0-17.7 14.4-32.1 32.1-32.1h437.4c17.7 0 32.1 14.4 32.1 32.1v274.4c0 17.7-14.4 32.1-32.1 32.1H328.3z" fill="#FFFFFF" /><path d="M765.7 355.1c12.6 0 22.9 10.2 22.9 22.9v274.4c0 12.7-10.3 22.9-22.9 22.9H328.3c-12.6 0-22.9-10.2-22.9-22.9V378c0-12.7 10.3-22.9 22.9-22.9h437.4m0-18.5H328.3c-22.8 0-41.4 18.6-41.4 41.4v274.4c0 22.8 18.6 41.4 41.4 41.4h437.4c22.8 0 41.4-18.6 41.4-41.4V378c0-22.8-18.6-41.4-41.4-41.4z" fill="#151B28" /><path d="M791.3 400.1v256.5c0 11.9-9.6 21.4-21.4 21.4h-409c-11.8 0-21.4-9.5-21.4-21.4V400.1c0-11.9 9.6-21.4 21.4-21.4h408.9c11.9 0 21.5 9.5 21.5 21.4z" fill="#2AEFC8" /><path d="M305.4 611.4c35.3 0 63.8 28.6 63.8 63.8h-41c-12.6 0-22.9-10.2-22.9-22.9v-40.9m0.1-9.4c-5.2 0-9.4 4.2-9.4 9.4v41c0 17.8 14.5 32.3 32.3 32.3h41c5.2 0 9.4-4.2 9.4-9.4-0.1-40.5-32.9-73.3-73.3-73.3z m483.1 9.4v41c0 12.7-10.3 22.9-22.9 22.9h-41c0.1-35.4 28.7-63.9 63.9-63.9m0-9.4c-40.4 0-73.3 32.9-73.3 73.3 0 5.2 4.2 9.4 9.4 9.4h41c17.8 0 32.3-14.5 32.3-32.3v-41c0.1-5.2-4.2-9.4-9.4-9.4zM369.2 355.7c0 35.3-28.6 63.8-63.8 63.8v-41c0-12.7 10.3-22.9 22.9-22.9h40.9m0-9.3h-41c-17.8 0-32.3 14.5-32.3 32.3v41c0 5.2 4.2 9.4 9.4 9.4 40.3 0 73.1-32.7 73.3-73v-0.2c0-5.3-4.2-9.5-9.4-9.5z m0 18.8z m396.5-9.4c12.6 0 22.9 10.2 22.9 22.9v41c-35.3 0-63.8-28.6-63.8-63.8h40.9m0-9.5h-41c-5.2 0-9.4 4.2-9.4 9.4 0 40.4 32.9 73.3 73.3 73.3 5.2 0 9.4-4.2 9.4-9.4v-41c0-17.8-14.5-32.3-32.3-32.3z" fill="#151B28" /><path d="M449.3 630.6c-6.5 0-11.8-5.3-11.8-11.8V420.5c0-6.5 5.3-11.8 11.8-11.8s11.8 5.3 11.8 11.8v198.3c0 6.5-5.3 11.8-11.8 11.8z" fill="#514DDF" /><path d="M449.3 413.4c3.9 0 7.1 3.2 7.1 7.1v198.3c0 3.9-3.2 7.1-7.1 7.1s-7.1-3.2-7.1-7.1V420.5c0-3.9 3.1-7.1 7.1-7.1m0-9.4c-9.1 0-16.5 7.4-16.5 16.5v198.3c0 9.1 7.4 16.5 16.5 16.5s16.5-7.4 16.5-16.5V420.5c0-9.1-7.4-16.5-16.5-16.5z" fill="#151B28" /><path d="M547 630.6c-6.5 0-11.8-5.3-11.8-11.8V420.5c0-6.5 5.3-11.8 11.8-11.8s11.8 5.3 11.8 11.8v198.3c0 6.5-5.3 11.8-11.8 11.8z" fill="#514DDF" /><path d="M547 413.4c3.9 0 7.1 3.2 7.1 7.1v198.3c0 3.9-3.2 7.1-7.1 7.1-3.9 0-7.1-3.2-7.1-7.1V420.5c0-3.9 3.1-7.1 7.1-7.1m0-9.4c-9.1 0-16.5 7.4-16.5 16.5v198.3c0 9.1 7.4 16.5 16.5 16.5s16.5-7.4 16.5-16.5V420.5c0-9.1-7.4-16.5-16.5-16.5z" fill="#151B28" /><path d="M644.7 630.6c-6.5 0-11.8-5.3-11.8-11.8V420.5c0-6.5 5.3-11.8 11.8-11.8s11.8 5.3 11.8 11.8v198.3c0 6.5-5.3 11.8-11.8 11.8z" fill="#514DDF" /><path d="M644.7 413.4c3.9 0 7.1 3.2 7.1 7.1v198.3c0 3.9-3.2 7.1-7.1 7.1s-7.1-3.2-7.1-7.1V420.5c-0.1-3.9 3.1-7.1 7.1-7.1m0-9.4c-9.1 0-16.5 7.4-16.5 16.5v198.3c0 9.1 7.4 16.5 16.5 16.5s16.5-7.4 16.5-16.5V420.5c0-9.1-7.4-16.5-16.5-16.5z" fill="#151B28" /></svg>
+                            </div>
+                            <div class="service-box-content-one">
+                                <a href="service-detail.html"><h3 class="h3-title">Minha Vida</h3></a>
+                                <p>Atualmente, moro no Rio de Janeiro, mas sou natural de uma pequena cidade do interior de São Paulo chamada Fartura. Sou formado como ator-dublador e atuo nesse ramo há quatro anos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--About Us End-->
+
+<section class="main-counter-one mb-12">
+    <div class="counter-bg jarallax" data-jarallax="" data-speed="0.2" data-imgposition="50% 0%" style="background-image: none;" data-jarallax-original-styles="background-image: url(assets/images/counter-bg.png)"><div id="jarallax-container-0" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; z-index: -100;"><div style="background-position: 50% 50%; background-size: cover; background-repeat: no-repeat; background-image: url(&quot;&quot;); position: absolute; top: 0px; left: 0px; width: 1209px; height: 754.8px; overflow: hidden; pointer-events: none; transform-style: preserve-3d; backface-visibility: hidden; will-change: transform, opacity; margin-top: 68.1px; transform: translate3d(0px, -284.1px, 0px);"></div></div></div>
+    <div class="container">
+        <div class="row">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="service-contant-one wow fadeInLeft" data-wow-delay=".5s">
+                            <div class="service-title-one">
+                                <div class="subtitle">
+                                    <div class="subtitle-circle">
+                                        <div class="subtitle-circle-one">
+                                            <div class="subtitle-circle1-one"></div>
+                                            <div class="subtitle-circle2-one"></div>
+                                        </div>
+                                        <div class="subtitle-circle-two">
+                                            <div class="subtitle-circle1-two"></div>
+                                            <div class="subtitle-circle2-two"></div>
+                                        </div>
+                                    </div>
+                                    <h2 class="h2-subtitle">Beneficios de ser Sub</h2>
+                                </div>
+                                <h2 class="h2-title text-white">Ajude a comunidade</h2>
+                            </div>
+                            <p class="text-white">Ganhe beneficios exclusivos sendo sub, assim podemos nos dedicar cada vez mais em criar conteudo de qualidade para vocês, além é claro, de ajudar a realizar um sonho.</p>
+                            <a href="https://www.twitch.tv/moonzeira" class="sec-btn">👉 Escorregar o sub</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInRight" data-wow-delay=".5s">
+                        <div class="service-box-one right-p">
+                            <div class="main-service-box-one">
+                                <div class="services-icon-two">
+                                    <img src="https://img.icons8.com/?size=64&id=jzwpvjSrayPs&format=png" alt="Icon">
+                                </div>
+                                <div class="service-box-content-one">
+                                    <a href="https://www.twitch.tv/moonzeira"><h3 class="h3-title font_medieval">Imune as propagandas</h3></a>
+                                    <p>Você fica invisivel contra ameaças de anuncios.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-box-one left-p">
+                            <div class="main-service-box-one">
+                                <div class="services-icon-two">
+                                    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="96px" height="96px" baseProfile="basic"><path fill="#7b83eb" d="M14,38h19c3.314,0,6-2.686,6-6V17H3v10C3,33.075,7.925,38,14,38z"/><circle cx="19.5" cy="26.5" r="2"/><path fill="#a7adeb" d="M35,33h-5c-3.314,0-6-2.686-6-6v-3c0-1.105,0.895-2,2-2h13c1.105,0,2,0.895,2,2v3	C41,30.314,38.314,33,35,33z"/><path fill="#7b83eb" d="M33,30h-2c-0.552,0-1-0.448-1-1v0c0-0.552,0.448-1,1-1h2c0.552,0,1,0.448,1,1v0	C34,29.552,33.552,30,33,30z"/><path fill="#7b83eb" d="M38,30h-1c-0.552,0-1-0.448-1-1v0c0-0.552,0.448-1,1-1h1c0.552,0,1,0.448,1,1v0	C39,29.552,38.552,30,38,30z"/><linearGradient id="OhFLpPhHhdn-Hw1HqNi0ea" x1="-3.917" x2="9.226" y1="21.42" y2="42.453" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fed100"/><stop offset="1" stop-color="#e36001"/></linearGradient><path fill="url(#OhFLpPhHhdn-Hw1HqNi0ea)" d="M8,32.98V40l-2.5,1.9L3,40v-8.81C4.11,32.32,5.64,33,7.5,33C7.67,33,7.83,32.99,8,32.98z"/><linearGradient id="OhFLpPhHhdn-Hw1HqNi0eb" x1="-6.038" x2="16.488" y1="37.685" y2="18.784" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#c3cdd9"/><stop offset="1" stop-color="#9fa7b0"/></linearGradient><path fill="url(#OhFLpPhHhdn-Hw1HqNi0eb)" d="M17,18v1l-3.6,9c-1,3-3.159,5-5.9,5c-4,0-6.5-3.147-6.5-7C1,18,17,18,17,18z"/><radialGradient id="OhFLpPhHhdn-Hw1HqNi0ec" cx="17.605" cy="10.804" r="24.57" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fafafb"/><stop offset="1" stop-color="#c8cdd1"/></radialGradient><path fill="url(#OhFLpPhHhdn-Hw1HqNi0ec)" d="M15,19l-3,8c-1,3-3.259,5-6,5c-4,0-6-3.147-6-7C0,17,8,8,20.5,8c8.739,0,16.2,3.737,19.146,9	L15,19z"/><linearGradient id="OhFLpPhHhdn-Hw1HqNi0ed" x1="16.75" x2="34.71" y1="12.52" y2="12.52" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fed100"/><stop offset="1" stop-color="#e36001"/></linearGradient><path fill="url(#OhFLpPhHhdn-Hw1HqNi0ed)" d="M34.71,17h-3.96c-2.24-4.65-7.29-7.8-14-8.71c0.77-0.13,1.57-0.21,2.39-0.25	C26.97,8.48,32.27,12.07,34.71,17z"/><path fill="#5059c9" d="M48,19H15c0,0,4.587-4,16.5-4S48,19,48,19z"/><ellipse cx="5.083" cy="25" fill="#5059c9" rx="3.917" ry="4.5"/><linearGradient id="OhFLpPhHhdn-Hw1HqNi0ee" x1="-2.063" x2="6.651" y1="14.497" y2="28.442" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fed100"/><stop offset="1" stop-color="#e36001"/></linearGradient><ellipse cx="4.5" cy="25" fill="url(#OhFLpPhHhdn-Hw1HqNi0ee)" rx="2.5" ry="3"/></svg>
+                                </div>
+                                <div class="service-box-content-one">
+                                    <a href="https://www.twitch.tv/moonzeira"><h3 class="h3-title font_medieval">Cargo no Discord</h3></a>
+                                    <p>Você vai ter um cargo especial pra chamar de seu.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-box-one right-p">
+                            <div class="main-service-box-one mb-0">
+                                <div class="services-icon-two">
+                                    <img src="https://img.icons8.com/?size=64&id=TJV6IciB6WmK&format=png" alt="Icon">
+                                </div>
+                                <div class="service-box-content-one">
+                                    <a href="https://www.twitch.tv/moonzeira"><h3 class="h3-title">Emojis Exclusivos</h3></a>
+                                    <p>Ganhe emojis bonitinhos e personalizados só seu.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Testimonial Start-->
+<section class="main-testimonial-one">
+    <div class="object-left-one"><img src="assets/images/testimonialt-object-one.png" alt="Object"></div>
+    <div class="container">
+        <div class="row align-items-center">
+            
+            <div class="col-lg-6 wow fadeInLeft" data-wow-delay=".5s">
+                <div class="testimoniual-content-one">
+                    <div class="testimonial-title-one">
+                        <div class="subtitle">
+                            <div class="subtitle-circle">
+                                <div class="subtitle-circle-one">
+                                    <div class="subtitle-circle1-one"></div>
+                                    <div class="subtitle-circle2-one"></div>
+                                </div>
+                                <div class="subtitle-circle-two">
+                                    <div class="subtitle-circle1-two"></div>
+                                    <div class="subtitle-circle2-two"></div>
+                                </div>
+                            </div>
+                            <h2 class="h2-subtitle">Meus Trabalhos</h2>
+                        </div>
+                        <h2 class="h2-title text-black">Personagens que dublei</h2>
+                    </div>
+
+                    <div class="swiper testimonial-slider-one">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide testimonial-box-one">
+                                <div class="testimonial-quort"><img src="https://img.icons8.com/?size=32&id=mXN6RAML49Zh&format=png" alt="Quort"></div>
+                                <div class="testimonial-client-box-one">
+                                    <div class="testimonial-client-name-one">
+                                        <h3 class="h1-title font_medieval">Serie Malcolm</h3>
+                                    </div>
+                                </div>
+                                <h2 class="h2-subtitle">Dublagem do Eric</h2>
+                                <p>Eric é um cadete da policia americana, ele é o alivio cómico da série e seu melhor amigo se chama Francis.</p>
+                            </div>
+                            
+                            <div class="swiper-slide testimonial-box-one">
+                                <div class="testimonial-quort"><img src="https://img.icons8.com/?size=32&id=mXN6RAML49Zh&format=png" alt="Quort"></div>
+                                <div class="testimonial-client-box-one">
+                                    <div class="testimonial-client-name-one">
+                                        <h3 class="h1-title font_medieval">Serie Médici</h3>
+                                    </div>
+                                </div>
+                                <h2 class="h2-subtitle">Dublagem do Bastiano</h2>
+                                <p>Um jovem da familia Soderini, na qual Lorenzo o personagem principal arrumou um casamento falso com a personagem Bianca.</p>
+                            </div>
+
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-6 wow fadeInRight" data-wow-delay=".5s">
+                <div class="testimonial-img-one">
+                    <img src="assets/images/victor_ROSA.png" alt="Narragem">
+                    <a href="https://youtu.be/jgNVl6EpTeQ" class="testmonial-play-icon popup-youtube" title="Play Video"><span><i class="fa fa-play" aria-hidden="true"></i></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Testimonial End-->
+
+<!--Working Steps Start-->
+<section class="main-working-step-one">
+    <div class="object-left-one"><img src="assets/images/404-error-two.png" alt="Object"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="working-step-title-one">
+                    <div class="subtitle">
+                        <div class="subtitle-circle">
+                            <div class="subtitle-circle-one">
+                                <div class="subtitle-circle1-one"></div>
+                                <div class="subtitle-circle2-one"></div>
+                            </div>
+                            <div class="subtitle-circle-two">
+                                <div class="subtitle-circle1-two"></div>
+                                <div class="subtitle-circle2-two"></div>
+                            </div>
+                        </div>
+                        <h2 class="h2-subtitle text-white">Processo de Criação</h2>
+                    </div>
+                    <h2 class="h2-title text-white">Historia do Logotipo.</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 wow fadeInUp" data-wow-delay=".5s">
+                <div class="working-step-box-one right-p55">
+                    <div class="step-arrow1">
+                        <img src="assets/images/step-arrow1.png" alt="Arrow">
+                    </div>
+                    <div class="main-working-step-box">
+                        <span>01</span>
+                        <center>
+                            <div class="working-step-icon-one text-center align-items-center">
+                                <img src="https://img.icons8.com/?size=64&id=tRqvgcgLYpDJ&format=png" alt="Icon">
+                            </div>
+                        </center>
+                        <div class="working-step-box-content-one text-center align-items-center">
+                            <h3 class="logotipo-title">A Lua</h3>
+                            <p>Representa as origens às quais faz referência ao meu antigo logo da live.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 wow fadeInDown" data-wow-delay=".5s">
+                <div class="working-step-box-one left-right-p26">
+                    <div class="main-working-step-box">
+                        <span>02</span>
+                        <center>
+                            <div class="working-step-icon-one">
+                                <img src="https://img.icons8.com/?size=100&id=WMocKF381u4s&format=png" alt="Icon">
+                            </div>
+                        </center>
+                        <div class="working-step-box-content-one align-items-center text-center">
+                            <h3 class="logotipo-title">A Sombra</h3>
+                            <p>Ela representa a comunidade, já que é uma arte que ganhei com muito carinho no meu aniversário de um membro que me inspirei.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 wow fadeInUp" data-wow-delay=".5s">
+                <div class="working-step-box-one left-p55">
+                    <div class="step-arrow2">
+                        <img src="assets/images/step-arrow2.png" alt="Arrow">
+                    </div>
+                    <div class="main-working-step-box">
+                        <span>03</span>
+                        <center>
+                            <div class="working-step-icon-one">
+                                <img src="https://img.icons8.com/?size=100&id=jPMYfUo1BdC5&format=png" alt="Icon">
+                            </div>
+                        </center>
+                        
+                        <div class="working-step-box-content-one align-items-center text-center">
+                            <h3 class="logotipo-title">As Cores</h3>
+                            <p>Estou disponível nas principais plataformas de streaming. Basta clicar na que você preferir.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Working Steps End-->
+
+<!--My Clients Start-->
+<section class="main-my-tools-in-one">
+    <div class="object-right-one"><img src="assets/images/my-client-object-one.png" alt="Object"></div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 wow fadeInLeft" data-wow-delay=".5s">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="my-client-brand-one">
+                            <div class="my-client-box one">
+                                <img src="https://clipart.info/images/ccovers/1590430872black-and-white-youtube-logo-png.png" height="100" alt="Brand">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="my-client-brand-one top-p">
+                            <div class="my-client-box one">
+                                <img src="https://seeklogo.com/images/T/twitch-logo-819D9B88C0-seeklogo.com.png" alt="Brand">
+                            </div>
+                            <div class="my-client-box one mb-0">
+                                <img src="https://1000logos.net/wp-content/uploads/2017/02/Logo-Instagram.png" alt="Brand">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="my-client-brand-one">
+                            <div class="my-client-box one">
+                                <img src="https://cdn.worldvectorlogo.com/logos/tiktok-plain-1.svg" alt="Brand">
+                            </div>
+                            <div class="my-client-box one mb-0">
+                                <img src="https://freelogopng.com/images/all_img/1692798465facebook-logo-transparent-black.png" alt="Brand">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeInRight" data-wow-delay=".5s">
+                <div class="my-client-content-one">
+                    <div class="my-client-title-one">
+                        <h2 class="h2-title text-ciano">- Minhas Redes</h2>
+                    </div>
+                    <p class="text-mei wow fadeInUp">Estou nas principais plataformas de streaming, basta clicar na qual você desejar.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--My Clients End-->
+
+<section class="main-cta-two">
+    <div class="container">
+        <div class="cta-bg-two">
+            <div class="row align-items-center">
+                <div class="col-lg-7 col-md-7">
+                    <div class="cta-title-two">
+                        <div class="subtitle">
+                            <div class="subtitle-circle">
+                                <div class="subtitle-circle-one">
+                                    <div class="subtitle-circle1-one"></div>
+                                    <div class="subtitle-circle2-one"></div>
+                                </div>
+                                <div class="subtitle-circle-two">
+                                    <div class="subtitle-circle1-two"></div>
+                                    <div class="subtitle-circle2-two"></div>
+                                </div>
+                            </div>
+                            <h2 class="h2-subtitle">Desenvolvimento</h2>
+                        </div>
+                        <h2 class="h2-title text-white">Pagina Criada por Henrique</h2>
+                        <p class="h6-title font_medieval" style="color: rgb(117, 117, 117);">© 2024 Todos os direitos são reservados à Moonzeira - <a href="#" class="">moonzeira.com.br</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-5">
+                    <div class="cta-btn-two">
+                        <a href="https://www.instagram.com/bitfp/" class="button-instagram">Meu Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Back To Top Start-->
+<div class="progress-wrap active-progress">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewbox="-1 -1 102 102">
+       <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 273.171;"></path>
+    </svg>
+ </div>
+<!--Back To Top End-->
+
+<!-- Jquery JS Link -->
+<script src="assets/js/jquery.min.js"></script>
+
+<!-- Bootstrap JS Link -->
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+
+<!-- Custom JS Link -->
+<script src="assets/js/custom.js"></script>
+
+<!-- Swiper Slider JS Link -->
+<script src="assets/js/swiper-bundle.min.js"></script>
+
+<!-- Wow Animation JS -->
+<script src="assets/js/wow.min.js"></script>
+
+<!-- Magnific JS -->
+<script src="assets/js/magnific-popup.js"></script>
+<script src="assets/js/custom-magnific-popup.js"></script>
+
+<!-- BG-Moving JS -->
+<script src="assets/js/bg-moving.js"></script>
+
+<!--Counter JS-->
+<script src="assets/js/custom-scroll-count.js"></script>
+
+<!--Progress JS-->
+<script src="assets/js/custom-progress-bar.js"></script>
+
+<!--Jarallax JS-->
+<script src="assets/js/jarallax.js"></script>
+<script src="assets/js/jarallax.min.js"></script>
+
+<!--Back To Top JS-->
+<script src="assets/js/back-to-top.js"></script>
+
+</body>
+</html>
